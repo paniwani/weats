@@ -14,7 +14,7 @@ namespace :punch do
       doc = Nokogiri::HTML(f)
       title = doc.search('h1[itemprop=name]').inner_text
 
-      recipe = Recipe.new( name: title )
+      recipe = Recipe.new( name: title, source: 'punchfork' )
 
       ingrs = doc.search('#categorized-ingredients li[itemprop=ingredients]')
       ingrs.each do |ingr|
