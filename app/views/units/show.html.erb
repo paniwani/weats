@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Recipe name:</b>
+  <%= @unit.recipe_name %>
+</p>
+
+<p>
+  <b>Shopping name:</b>
+  <%= @unit.shopping_name %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @unit.type %>
+</p>
+
+<p>
+  <b>Conversion:</b>
+  <%= @unit.conversion %>
+</p>
+
+
+<%= link_to 'Edit', edit_unit_path(@unit) %> |
+<%= link_to 'Back', units_path %>

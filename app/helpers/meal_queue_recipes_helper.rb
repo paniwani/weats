@@ -1,0 +1,2 @@
+module MealQueueRecipesHelper
+end

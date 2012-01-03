@@ -1,0 +1,27 @@
+<h1>Listing meal_queue_recipes</h1>
+
+<table>
+  <tr>
+    <th>Meal queue</th>
+    <th>Recipe</th>
+    <th>Completed</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @meal_queue_recipes.each do |meal_queue_recipe| %>
+  <tr>
+    <td><%= meal_queue_recipe.meal_queue_id %></td>
+    <td><%= meal_queue_recipe.recipe_id %></td>
+    <td><%= meal_queue_recipe.completed %></td>
+    <td><%= link_to 'Show', meal_queue_recipe %></td>
+    <td><%= link_to 'Edit', edit_meal_queue_recipe_path(meal_queue_recipe) %></td>
+    <td><%= link_to 'Destroy', meal_queue_recipe, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Meal queue recipe', new_meal_queue_recipe_path %>

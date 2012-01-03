@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Meal queue:</b>
+  <%= @meal_queue_recipe.meal_queue_id %>
+</p>
+
+<p>
+  <b>Recipe:</b>
+  <%= @meal_queue_recipe.recipe_id %>
+</p>
+
+<p>
+  <b>Completed:</b>
+  <%= @meal_queue_recipe.completed %>
+</p>
+
+
+<%= link_to 'Edit', edit_meal_queue_recipe_path(@meal_queue_recipe) %> |
+<%= link_to 'Back', meal_queue_recipes_path %>

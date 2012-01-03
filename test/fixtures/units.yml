@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  recipe_name: MyString
+  shopping_name: MyString
+  type: 
+  conversion: 1.5
+
+two:
+  recipe_name: MyString
+  shopping_name: MyString
+  type: 
+  conversion: 1.5

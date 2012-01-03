@@ -1,0 +1,23 @@
+<h1>Listing meal_queues</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @meal_queues.each do |meal_queue| %>
+  <tr>
+    <td><%= meal_queue.user_id %></td>
+    <td><%= link_to 'Show', meal_queue %></td>
+    <td><%= link_to 'Edit', edit_meal_queue_path(meal_queue) %></td>
+    <td><%= link_to 'Destroy', meal_queue, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Meal queue', new_meal_queue_path %>

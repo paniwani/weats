@@ -1,0 +1,29 @@
+<%= form_for(@meal_queue_recipe) do |f| %>
+  <% if @meal_queue_recipe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@meal_queue_recipe.errors.count, "error") %> prohibited this meal_queue_recipe from being saved:</h2>
+
+      <ul>
+      <% @meal_queue_recipe.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :meal_queue_id %><br />
+    <%= f.number_field :meal_queue_id %>
+  </div>
+  <div class="field">
+    <%= f.label :recipe_id %><br />
+    <%= f.number_field :recipe_id %>
+  </div>
+  <div class="field">
+    <%= f.label :completed %><br />
+    <%= f.check_box :completed %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  meal_queue_id: 1
+  recipe_id: 1
+  completed: false
+
+two:
+  meal_queue_id: 1
+  recipe_id: 1
+  completed: false

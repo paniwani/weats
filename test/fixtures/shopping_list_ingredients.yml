@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  shopping_list_id: 1
+  ingredient_id: 1
+  quantity: 1.5
+  purchased: false
+
+two:
+  shopping_list_id: 1
+  ingredient_id: 1
+  quantity: 1.5
+  purchased: false

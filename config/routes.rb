@@ -1,4 +1,22 @@
 Weats::Application.routes.draw do
+  resources :recipe_ingredients
+
+  resources :units
+
+  resources :ingredients
+
+  resources :recipes
+
+  resources :shopping_list_ingredients
+
+  resources :shopping_lists
+
+  resources :meal_queue_recipes
+
+  resources :meal_queues
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

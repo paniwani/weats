@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @meal_queue.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_meal_queue_path(@meal_queue) %> |
+<%= link_to 'Back', meal_queues_path %>
